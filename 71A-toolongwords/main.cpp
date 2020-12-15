@@ -8,9 +8,9 @@ int main()
 {
     string word;
     int n;
-    int i;
+    int counter=0;
     cin>>n;
-    for(i=0; i<n; i++)
+    while(i<n)
     {
         cin>>word;
         if(word.length()>10)
@@ -21,5 +21,6 @@ int main()
         {
             cout<<word<<endl;
         }
+        counter++;
     }
 }
