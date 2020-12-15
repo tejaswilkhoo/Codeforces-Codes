@@ -8,7 +8,7 @@ int main()
     int k=0;
     cin>>n;
 
-    while(n--)
+    while(n>0)
     {
         int p,v,t;
 
@@ -17,6 +17,8 @@ int main()
         {
             k++;
         }
+
+        n--;
     }
     cout<<k;
 }
