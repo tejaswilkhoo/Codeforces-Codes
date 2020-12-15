@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1608006581 source:t:\randomcodes\toolongwords\main.cpp
+	<iostream>
+	<vector>
+	<string>
+
