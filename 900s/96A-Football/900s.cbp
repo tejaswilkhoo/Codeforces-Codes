@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="96A-Football.cpp" />
+		<Unit filename="Untitled1.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
