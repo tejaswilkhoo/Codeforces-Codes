@@ -3,43 +3,87 @@
 #include <algorithm>
 #include <string>
 #include <stdio.h>
+#include <vector>
+#include <cstdlib>
+#include <iomanip>
 
-using namespace std;
+using namespace std;  
 
-int main()
-{
-//	int n;
-//	cin>>n;
-	int disp[2][3];
+int n; //number of test cases or rows of the array
+void column_sort(int list[][2])  
+{  
+	int temp,temp2;  
+	for(int out=0; out<n-1; out++)  
+	{  
+		for(int in=out+1; in<n; in++)  
+		{  
+			if(list[in][0]<list[out][0])  
+			{   
+				temp=list[out][0];  
+				temp2=list[out][1];  
+
+				list[out][0]=list[in][0];  
+				list[out][1]=list[in][1];  
+
+				list[in][0]=temp;  
+				list[in][1]=temp2;  
+			}                        
+		}  
+	}  
+}     
+  
+int main()  
+{  
+	//cin>>n;
+	//int array[n][2];
 	
-//	int time;
-//	int pos;
+	//int i, j;
+	//for(i=0; i<n; i++) 
+	//{
+		//for(j=0;j<2;j++) 
+		//{
+			//cin>>array[i][j];
+		//}
+	//}
 
-   int i, j;
-   for(i=0; i<2; i++) {
-      for(j=0;j<3;j++) {
-         printf("Enter value for disp[%d][%d]:", i, j);
-         scanf("%d", &disp[i][j]);
-      }
-   }
-   //Displaying array elements
-   printf("Two Dimensional array elements:\n");
-   for(i=0; i<2; i++) {
-      for(j=0;j<3;j++) {
-         printf("%d ", disp[i][j]);
-         if(j==2){
-            printf("\n");
-         }
-      }
-   }
-   return 0;
+	//column_sort(array);  
 	
-//	sort(arr,arr+n);
+	//cout<<"Sorted Array: "<<endl;
+	//for(i=0; i<n; i++) 
+	//{
+		//for(j=0;j<2;j++) 
+		//{
+			//cout<<array[i][j]<<" ";
+			//if(j==1)
+			//{
+				//cout<<endl;
+			//}
+		//}
+	//}
 
-//	cout<<"Sorted Array: ";
-//	for(int i=0;i<n;i++)
-//	{
-//		cout<<arr[i]<<" ";
-//	}
+	//cout<<endl;
 	
+	//double last_speed = 0.0;
+	//double greatest_speed = 0.0;
+	
+	//for(int row=0;row<n;row++)
+	//{
+		//last_speed = fabs(((array[row+1][1])-(array[row][1]))/((array[row+1][0])-(array[row][0])));
+		//if (last_speed > greatest_speed)
+		//{
+			//greatest_speed = last_speed;
+		//}
+	//}
+	//cout<<fixed;
+	//cout<<setprecision(1);
+	//cout<<"Greatest Speed: "<<greatest_speed;
+	
+	int a = 5;
+	int b = 2;
+	
+	float c = double(a/b);
+	
+ 	cout<<fixed;
+	cout<<setprecision(5);
+	cout<<"Value of C: "<<c;
 }
