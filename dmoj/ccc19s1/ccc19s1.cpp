@@ -41,6 +41,8 @@ int main()
             vCount++;
         }
     }
+    
+   
 //    cout << "# of H's: " << hCount << endl;
     
 //    cout << "# of V's: " << vCount << endl;

@@ -16,32 +16,43 @@ int main()
 	cin>>n;
 	
 	int arr[n];
-	cout<<endl;
-	for(int i=1; i<(n+1); i++)
+//	cout<<endl;
+	for(int i=0; i<n; i++)
 	{
-		arr[i] = i;
-		cout<<arr[i]<<endl;
+		arr[i] = i+1;
+//		cout<<arr[i]<<endl;
 	}
-	cout<<endl;
+//	cout<<endl;
 	
-
+	
+	int m;
+	cin>>m;
+	
+	for(int a=0; a<m; a++)
+	{
+	
 	int pos;	
 	cin>>pos;
 
-	for(int i=pos-1; i<n-1; i++)
-	{
-		arr[i] = arr[i + 1];
+		for (int pos2 = pos; pos2<n+1; pos2+=(pos-1))
+		{
+			for(int i=pos2-1; i<n-1; i++)
+			{
+				arr[i] = arr[i + 1];
+			}
+
+			n--;
+
+			//cout<<"\nElements of array after delete are : \n";
+			//for(int i=0; i<n; i++)
+			//{
+				//cout<<arr[i]<<endl;
+			//}
+		}
 	}
-
-	/* Decrement array size by 1 */
-	n--;
-
-	/* Print array after deletion */
-	cout<<"\nElements of array after delete are : \n";
+	
 	for(int i=0; i<n; i++)
 	{
 		cout<<arr[i]<<endl;
 	}
-    
-	
 }
