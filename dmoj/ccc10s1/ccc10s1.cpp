@@ -2,12 +2,6 @@
 
 using namespace std;  
 
-bool comparison(const pair<int,int> &a,const pair<int,int> &b)
-{ 
-    return a.second<b.second; 
-} 
-
-
 int main()
 {
 	int n;
