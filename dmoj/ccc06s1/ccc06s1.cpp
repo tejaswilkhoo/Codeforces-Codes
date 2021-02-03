@@ -23,9 +23,9 @@ int main()
 		( 
 		( (mom.substr(0,2) == "AA" || dad.substr(0,2) == "AA" ) && kid.substr(0,1) != "A" ) ||
 		( (mom.substr(2,2) == "BB" || dad.substr(2,2) == "BB" ) && kid.substr(1,1) != "B" ) ||		
-		( (mom.substr(4,2) == "BB" || dad.substr(4,2) == "BB" ) && kid.substr(2,1) != "C" ) ||
-		( (mom.substr(6,2) == "BB" || dad.substr(6,2) == "BB" ) && kid.substr(3,1) != "D" ) ||
-		( (mom.substr(8,2) == "BB" || dad.substr(8,2) == "BB" ) && kid.substr(4,1) != "E" )		
+		( (mom.substr(4,2) == "CC" || dad.substr(4,2) == "CC" ) && kid.substr(2,1) != "C" ) ||
+		( (mom.substr(6,2) == "DD" || dad.substr(6,2) == "DD" ) && kid.substr(3,1) != "D" ) ||
+		( (mom.substr(8,2) == "EE" || dad.substr(8,2) == "EE" ) && kid.substr(4,1) != "E" )		
 		) ||
 		
 		(
