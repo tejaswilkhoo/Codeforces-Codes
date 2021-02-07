@@ -26,9 +26,9 @@ int main()
 	sort(dmoj, dmoj+n);
 	sort(peg, peg+n);
 	
+	int finalVal = 0;
 	if(question == 1)
 	{
-		int finalVal = 0;
 		for(int i=0; i<n; i++)
 		{
 			finalVal+=max(dmoj[i],peg[i]);
@@ -39,7 +39,6 @@ int main()
 	
 	else
 	{
-		int finalVal = 0;
 		for(int i=0; i<n; i++)
 		{
 			finalVal+=max(dmoj[n-i-1],peg[i]);
